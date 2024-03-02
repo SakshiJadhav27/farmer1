@@ -1,0 +1,15 @@
+.adproduct{
+    margin-top: 0px;
+}
+.adprod{
+    font-weight:500;
+}
+section{
+    border:1px; 
+}
+.ad-main{
+    background-color: #729a8058;
+}
+form button:hover {
+    background-color:#314839;
+}

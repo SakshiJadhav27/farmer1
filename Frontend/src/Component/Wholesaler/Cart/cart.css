@@ -1,0 +1,30 @@
+.abc{
+    margin-top: 100px;
+}
+.modal-footer button{
+    padding: 10px 20px;
+    background-color: #61876E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-footer  button:hover {
+    background-color:#3148399d;
+  }
+.card-body button{
+    padding: 10px 20px;
+    background-color: #61876E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-body button:hover {
+    background-color:#3148399d;
+  }
+  .cart-main{
+    margin-top: 0px;
+    background-color: #61876e3e;
+  }

@@ -1,0 +1,33 @@
+.government-schemes-table-container {
+    margin: 20px;
+  }
+  
+  .government-schemes-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .government-schemes-table th, .government-schemes-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .government-schemes-table th {
+    background-color:#61876E;
+    color: #f2f2f2;
+  }
+  
+  .government-schemes-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .government-schemes-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .government-schemes-table a {
+    text-decoration: none;
+    color: blue;
+  }
+  

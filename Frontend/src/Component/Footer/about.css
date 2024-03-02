@@ -1,0 +1,60 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    margin-top:0px;
+  }
+  
+  .about-us header {
+    background-image: url('/src/images/about-background.jpg');
+    background-size: cover;
+    width: 100%;
+    position:relative;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .about-us header h1{
+    font-size:3rem ;
+  }
+  .about-us header h2{
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+  }
+  header h1 {
+    margin: 0;
+  }
+  
+  .about-us main {
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .about-us section {
+    margin-bottom: 20px;
+  }
+  .introduction p{
+     font-size:1.4rem;
+     margin-right: 250px;
+  }
+  .our-story .p1{
+    font-size: 1.4rem;
+    margin-left: 300px;
+  }
+  .our-story .p2{
+    font-size: 1.4rem;
+    margin-right: 250px;
+  }
+  .project .p3{
+    font-size: 1.4rem;
+    margin-left: 300px;
+  }
+  .project .p4{
+    font-size: 1.4rem;
+    margin-right: 250px;
+  }
+  footer {
+    background-color: #A6BB8D; /* Adjust the opacity as needed */
+    text-align: center;
+    padding: 20px 0;
+  }
+  

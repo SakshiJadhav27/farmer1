@@ -1,0 +1,67 @@
+.Login_main {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .side_image {
+    flex: 1;
+    margin-top: 150px;
+    margin-left: 150px;
+  }
+  
+  .side_image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .required {
+    color: red;
+  }
+  
+  .wholesaler-login{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  .required {
+    color: red;
+  }
+  .wholesaler-login h1 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  h4{
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  label {
+    margin-bottom: 8px;
+  }
+  button {
+    padding: 10px;
+    background-color:rgb(97, 135, 110);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: larger;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

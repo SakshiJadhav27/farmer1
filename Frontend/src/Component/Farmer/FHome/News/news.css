@@ -1,0 +1,48 @@
+/* Styles for the slider */
+.news{
+  text-align: center;
+  background-color: #61876e5f;
+  top: 0;
+  position: relative;
+}
+.news-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 0.19);
+}
+
+.news-card h5 {
+  margin-bottom: 10px;
+}
+
+.news-card img {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.news-card button {
+  background-color: #61876E;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Detailed information */
+.news-card .details {
+  display: none;
+  margin-top: 10px;
+}
+
+.news-card.expanded .details {
+  display: block;
+}

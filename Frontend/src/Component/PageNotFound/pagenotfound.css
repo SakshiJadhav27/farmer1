@@ -1,0 +1,15 @@
+.page-main{
+    margin-top: 50px;
+}
+.page-main img{
+    height: 40%;
+    width: 40%;
+    margin-left: 450px;
+}
+.page-main h2{
+    text-align:center;
+}
+.page-main p{
+    text-align: center;
+    font-size:1.4rem;
+}

@@ -1,0 +1,74 @@
+footer {
+    background-color: #A6BB8D; /* Adjust the opacity as needed */
+    text-align: center;
+    padding: 25px 0;
+  }
+  .slider-container-image{
+      background-image:linear-gradient(180deg,#A6BB8D 0%,#EAE7B1 100%);
+      position: relative;
+  }
+  .slider-container-image h2{
+    text-align: center;
+  }
+  .image-slider img{
+    height: 35%;
+    width: 50%;
+  }
+  .farming-main {
+    margin-top: 0; 
+    text-align: center;
+    position: relative;
+    /*background-image:linear-gradient(180deg,#A6BB8D 0%,#EAE7B1 100%);*/
+  }
+  
+  .farming-content {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    margin-top: 50px; /* Allow horizontal scrolling for small screens */
+  }
+  
+  .farming-content h2 {
+    font-size: 24px;
+  }
+  
+  .farming-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to new lines */
+    overflow-x: auto; /* Allow horizontal scrolling for small screens */
+  }
+  
+ .farming-content li {
+    margin-right: 30px; /* Add space between objectives */
+  }
+  
+  .farming-content li:last-child {
+    margin-right: 0; /* Remove margin from last objective */
+  }
+  
+.farming-content li img {
+    width: 70%;
+    height: 30%; /* Adjust image width as needed */
+    margin-right: 20px; /* Add space between image and text */
+  }
+  
+  .farming-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .farming-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+.farming-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+  }
+  

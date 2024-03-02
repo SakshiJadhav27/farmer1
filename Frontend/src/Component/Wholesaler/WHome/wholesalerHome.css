@@ -1,0 +1,46 @@
+/* App.css */
+.wimage-container {
+    position: absolute;
+    width: 100vw; /* 100% of the viewport width */
+    height: 90vh; /* 100% of the viewport height */
+    overflow: hidden; 
+    left: 0%;
+    /*transition: transform 0.5s ease; /* Add transition effect on transform */
+  }
+  
+  .wimage-container:hover {
+    transform: scale(1.0); /* Enlarge the image container on hover */
+  }
+  
+  .wimage-container img {
+    width: 100%; /* Make the image fill the entire width */
+    height: 95%; /* Make the image fill the entire height */
+    object-fit: cover; 
+    transition: opacity 0.5s ease; /* Add transition effect on opacity */
+  }
+  
+  .wimage-container:hover img {
+    opacity: 0.9; /* Reduce opacity of the image on hover */
+  }
+  
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(20, 3, 3, 0.377);
+    padding: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+    transition: opacity 0.5s ease; /* Add transition effect on opacity */
+  }
+  .message p{
+    font-size: 2rem;
+    color:white;
+    font-style: oblique;
+  }
+  
+  .wimage-container:hover .message {
+    opacity: 0; /* Hide the message on hover */
+  }
+  

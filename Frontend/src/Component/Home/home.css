@@ -1,0 +1,131 @@
+.f-bg{
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  margin-top:30px;
+}
+.f-bg video{
+  width: 100%;
+  height: auto;
+}
+.bg-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(14, 73, 39, 0.728); /* Adjust the alpha value for opacity */
+  padding: 40px; /* Add padding to make text readable */
+}
+.bg-content h2{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.bg-content p{
+  font-size: 1.5rem;
+}
+.hero-section {
+  position: relative;
+  background-color: #81ad9154;
+  padding: 100px;
+  padding-bottom:0.5px;
+}
+.image-container1{
+  position: absolute;
+  top:180px;
+  left: 220px;
+}
+.image-container{
+  position: absolute;
+  top:40px;
+  left:10px;
+}
+
+.image-container img {
+  width: 30%;
+  height: 50%;
+}
+.image-container1 img {
+  width: 45%;
+  height: 50%;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  text-align: center;
+  left: 600px;
+}
+
+.content-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.content-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* ObjectivesSection.css */
+
+.objectives-section {
+  margin-top: 0; 
+  text-align: center;
+  background-image:linear-gradient(180deg,#A6BB8D 0%,#EAE7B1 100%);
+}
+
+.objectives-content {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  margin-top: 50px; /* Allow horizontal scrolling for small screens */
+}
+
+.objectives-content h2 {
+  font-size: 24px;
+}
+
+.objectives-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to new lines */
+  overflow-x: auto; /* Allow horizontal scrolling for small screens */
+}
+
+.objectives-content li {
+  margin-right: 30px; /* Add space between objectives */
+}
+
+.objectives-content li:last-child {
+  margin-right: 0; /* Remove margin from last objective */
+}
+
+.objectives-content li img {
+  width: 100px; /* Adjust image width as needed */
+  margin-right: 20px; /* Add space between image and text */
+}
+
+.objective-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.objective-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.objective-details p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+footer {
+  background-color: #A6BB8D; /* Adjust the opacity as needed */
+  text-align: center;
+  padding: 20px 0;
+}

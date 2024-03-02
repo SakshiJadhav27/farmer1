@@ -1,0 +1,30 @@
+/* LoginTable.css */
+
+.wholesaler-table-container {
+    margin-top: 20px;
+  }
+  
+  .wholesaler-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .wholesaler-table-container th,
+  .wholesaler-table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .wholesaler-table-container th {
+    background-color: #f2f2f2;
+  }
+  
+  .wholesaler-table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .wholesaler-table-container tr:hover {
+    background-color: #ddd;
+  }
+  
