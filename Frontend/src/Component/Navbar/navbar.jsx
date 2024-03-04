@@ -58,9 +58,9 @@ function FarmerNavbar (){
                 <div class="navbar-nav ml-auto">
                 <a class="text-light nav-item nav-link  navbar-text active" href="/farmerHome">{translate('Home')}<span class="sr-only">(current)</span></a>
                 <a class="text-light nav-item nav-link  navbar-text" href="/about">{translate('about')}</a>
-                <a class="text-light nav-item nav-link  navbar-text" href="/weather">Weather</a>
-                <a class="text-light nav-item nav-link  navbar-text" href="/AddProduct">Add Product</a>
-                <a class="text-light nav-item nav-link  navbar-text" href="/governScheme">Government Schemes</a>
+                <a class="text-light nav-item nav-link  navbar-text" href="/weather">{translate('weather')}</a>
+                <a class="text-light nav-item nav-link  navbar-text" href="/AddProduct">{translate('addproduct')}</a>
+                <a class="text-light nav-item nav-link  navbar-text" href="/governScheme">{translate('gscheme')}</a>
                 <a class="text-light nav-item nav-link  navbar-text" href="/contact">{translate('contact')}</a>
                 <div className="lang">
                 <select class="text-light" onChange={handleLanguageChange}>

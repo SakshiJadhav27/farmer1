@@ -12,28 +12,33 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useLanguage } from '../LanguageTranslate/LanguageContext';
 
+
 const CenteredImages = () => {
   const { translate } = useLanguage();
   useEffect(()=>{
     Aos.init({duration:1500})
   }, [])
   const objectives = [
-    { 
+    {
+      id:1,
       title: "Empowering Farmers",
       description: "Empowering farmers with access to technology and resources for improved productivity and livelihoods.",
       image:obj
     },
     { 
+      id:2,
       title: "Facilitating Market Access",
       description: "Facilitating market access for farmers to sell their produce directly to consumers, wholesalers, and retailers.",
       image: obj3
     },
     { 
+      id:3,
       title: "Promoting Sustainable Agriculture",
       description: "Promoting sustainable farming practices that prioritize environmental conservation and soil health.",
       image: obj2
     },
     { 
+      id:4,
       title: "Providing Financial Inclusion",
       description: "Providing financial inclusion by integrating government schemes, subsidies, and credit facilities.",
       image:obj1
@@ -73,12 +78,12 @@ const CenteredImages = () => {
       <h2>Our Objectives</h2>
       <div className="objectives-content">
         <ul>
-          {objectives.map((objective, index) => (
-            <li key={index}>
-              <img src={objective.image} alt={objective.title} />
+          {objectives.map(objective=> (
+            <li key={objective.id}>
+              <img src={objective.image} alt={objective.title}/>
               <div className="objective-details">
-                <h3>{objective.title}</h3>
-                <p>{objective.description}</p>
+                <h3>{translate(objective.title)}</h3>
+                <p>{translate(objective.description)}</p>
               </div>
             </li>
           ))}

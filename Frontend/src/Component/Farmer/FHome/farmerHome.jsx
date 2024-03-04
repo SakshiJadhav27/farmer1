@@ -1,10 +1,11 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import "./farmerHome.css";
 import Slider1 from '../../Silder/slider';
 import { FarmerNavbar } from "../../Navbar/navbar";
 import News from "./News/news"
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../../LanguageTranslate/LanguageContext';
 import gov_link from "../../../images/gov1.png"
 import gov_link1 from "../../../images/gov2.png"
 import gov_link2 from "../../../images/gov3.png"
@@ -21,30 +22,35 @@ import farm5 from "../../../images/farming5.jpg"
 
 const Farming=[
     {
+        id:1,
         Title:"Organic Farming",
         imgs:farm1,
         link:"https://www.ofai.org/",
         des:"The adoption of the health-centered lifestyle among the middle and high-class citizens of India elevated the demand for healthy, pesticide-free, chemical-free agricultural produce."
     },
     {
+        id:2,
         Title:"Dairy Farming",
         imgs:farm2,
         link:"https://www.cedsi.in/",
         des:"Dairy farming is the most profitable livestock farming in India. It refers to the rearing of cows, buffaloes, or goats to produce milk. It does not involve the sale of these animals for meat."
     },
     {
+        id:3,
         Title:"Poultry Farming",
         imgs:farm3,
         link:"https://www.poultryindia.co.in/",
         des:"Poultry farming includes all activities associated with raising domesticated birds such as chickens, ducks, and turkeys for their eggs and meat."
     },
     {
+        id:4,
         Title:"Aquaculture",
         imgs:farm4,
         link:"https://ciba.icar.gov.in/",
         des:"Aquaculture or Fish Farming is the cultivation of fish in ponds or tanks for commercial purposes. There is significant market demand for fish farming in India."
     },
     {
+        id:5,
         Title:" Medicinal Plants Farming",
         imgs:farm5,
         link:"https://nmpb.nic.in/content/medicinal-plants-cultivation",
@@ -83,6 +89,8 @@ const ImageSlide=[
       
 ]
 const FarmerHome =()=>{
+  const {translate} = useLanguage();
+
     const settings = {
         infinite: true,
         slidesToShow: 5,
@@ -102,17 +110,17 @@ const FarmerHome =()=>{
         <News/>
         <div className="farming-main" data-aos="fade-up">
             <br/>
-            <h2>Most Profitable Farming in India</h2>
+            <h2>{translate("fhead")}</h2>
         <div className="farming-content">
         <ul>
           {Farming.map((farm, index) => (
-            <li key={index}>
+            <li key={farm.id}>
             <Link to={farm.link}>
-              <img src={farm.imgs} alt={farm.Title} />
+              <img src={translate(farm.imgs)} alt={translate(farm.Title)} />
               <div className="farming-details">
                 <br/>
-                <h3>{farm.Title}</h3>
-                <p>{farm.des}</p>
+                <h3>{translate(farm.Title)}</h3>
+                <p>{translate(farm.des)}</p>
               </div>
             </Link>
             </li>
@@ -122,7 +130,7 @@ const FarmerHome =()=>{
         </div>
         <div className="slider-container-image">
         <br/>
-        <h2>Important Links</h2>
+        <h2>{translate('mlink')}</h2>
         <Slider {...settings}>
         {ImageSlide.map((image, index) => (
             <div key={index}>

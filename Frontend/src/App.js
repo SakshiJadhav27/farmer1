@@ -10,13 +10,13 @@ function app(){
 
   return(
     <div>
+      <LanguageProvider>
       <AuthContextProvider>
-     <LanguageProvider>
       <div className='app'>
         <Router/>
       </div>
-      </LanguageProvider>
       </AuthContextProvider>
+      </LanguageProvider>
     </div>
 
 )
